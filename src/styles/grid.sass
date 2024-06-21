@@ -1,0 +1,19 @@
+.container
+ max-width:1320px
+ padding: 0 20px
+ margin: 0 auto
+ 
+.row
+ display: flex
+ flex-wrap: wrap
+ margin-left: -15px
+ width: calc(100% + 30px)
+
+.col
+ flex: 1
+ padding: 15px
+
+@for $i from 1 to 12
+ .col_#{$i}
+  min-width: calc(100% / 12 )* $i
+  max-width: calc(100% / 12 )* $i
